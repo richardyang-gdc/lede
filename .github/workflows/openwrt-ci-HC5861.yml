@@ -10,16 +10,14 @@
 name: 极路由3
 
 on:
-push:
-   branches: 
-      - master
    schedule:
-     - cron: 0 20 * * *
+    - cron: 0 20 * * *
+   push:
+      branches: 
+      - master
    release:
      types: [published]
-  watch:
-    types: started
-
+ 
 env:
  SSH_ACTIONS: false
  TZ: Asia/Shanghai
