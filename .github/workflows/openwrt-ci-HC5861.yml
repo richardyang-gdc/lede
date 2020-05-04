@@ -11,7 +11,7 @@ name: 极路由3
 
 on:
   schedule:
-    - cron: 0 13 * * *
+    - cron: 0 4 * * *
   push:
     branches: 
       - master
@@ -102,38 +102,17 @@ jobs:
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
           CONFIG_PACKAGE_luci-app-wol=n
-          # CONFIG_PACKAGE_luci-app-upnp=n
-          # CONFIG_PACKAGE_luci-app-accesscontrol=n
-          # CONFIG_PACKAGE_luci-app-ddns=n
-          # CONFIG_PACKAGE_luci-app-filetransfer=n
           CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
-          # CONFIG_PACKAGE_luci-app-vsftpd=n
-          # CONFIG_PACKAGE_luci-app-vlmcsd=n
-          # CONFIG_PACKAGE_luci-app-zerotier=n
-          # CONFIG_PACKAGE_luci-app-koolproxyR=y
-          # CONFIG_PACKAGE_luci-theme-argon=y
-          
-          CONFIG_PACKAGE_luci-app-adbyby-plus=y
-          # CONFIG_PACKAGE_luci-app-aria2=y
-          # CONFIG_PACKAGE_luci-app-baidupcs-web=y
-          # CONFIG_PACKAGE_luci-app-docker=y
-          # CONFIG_PACKAGE_luci-app-frpc=y
-          # CONFIG_PACKAGE_luci-app-kodexplorer=y
-          # CONFIG_PACKAGE_luci-app-minidlna=y
-          # CONFIG_PACKAGE_luci-app-openvpn=y
-          # CONFIG_PACKAGE_luci-app-openvpn-server=y
-          # CONFIG_PACKAGE_luci-app-qbittorrent=y
+          CONFIG_PACKAGE_luci-app-koolproxyR=y
+          CONFIG_PACKAGE_luci-theme-argon=y          
+          CONFIG_PACKAGE_luci-app-adbyby-plus=y          
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-ttyd=y
-          CONFIG_PACKAGE_luci-app-v2ray-server=y
-          # CONFIG_PACKAGE_luci-app-verysync=y
-          CONFIG_PACKAGE_luci-app-webadmin=y
-          # CONFIG_PACKAGE_luci-app-wireguard=y
-          # CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-v2ray-server=y          
           EOF
           
           # 关闭ipv6:
