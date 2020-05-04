@@ -115,7 +115,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-accesscontrol=n
           CONFIG_PACKAGE_luci-app-ddns=n
           CONFIG_PACKAGE_luci-app-filetransfer=n
-          CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=n
+          CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
           CONFIG_PACKAGE_luci-app-vsftpd=n
           CONFIG_PACKAGE_luci-app-vlmcsd=n
           CONFIG_PACKAGE_luci-app-zerotier=n
@@ -172,6 +172,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt firmware
+          name: OpenWrt_Firmware_HC5861_RY
           path: ./artifact/
 
