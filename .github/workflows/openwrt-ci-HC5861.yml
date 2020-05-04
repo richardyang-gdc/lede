@@ -11,10 +11,10 @@ name: 极路由3
 
 on:
   schedule:
-    - cron: 0 12 * * *
-  #push:
-  #  branches: 
-  #    - master
+    - cron: 0 13 * * *
+  push:
+    branches: 
+      - master
   release:
       types: [published]
   watch:
