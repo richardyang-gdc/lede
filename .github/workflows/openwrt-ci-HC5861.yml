@@ -11,7 +11,7 @@ name: 极路由3
 
 on:
   schedule:
-    - cron: 0 4 * * *
+    - cron: 30 7 * * *
   push:
     branches: 
       - master
@@ -103,7 +103,6 @@ jobs:
           CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
           CONFIG_PACKAGE_luci-app-wol=n
           CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
-          CONFIG_PACKAGE_luci-app-koolproxyR=y
           CONFIG_PACKAGE_luci-theme-argon=y          
           CONFIG_PACKAGE_luci-app-adbyby-plus=y          
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
@@ -111,7 +110,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-          CONFIG_PACKAGE_luci-app-ttyd=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y          
           EOF
           
