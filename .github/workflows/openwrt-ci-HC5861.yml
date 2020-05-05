@@ -11,7 +11,7 @@ name: 极路由3
 
 on:
   schedule:
-    - cron: 30 7 * * *
+    - cron: 50 8 * * *
   push:
     branches: 
       - master
@@ -99,19 +99,25 @@ jobs:
 
           # 常用LuCI插件选择: 添加外面的主题和应用，包是通过diy.sh 脚本进行下载。
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-ttyd=y
-          CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
-          CONFIG_PACKAGE_luci-app-wol=n
-          CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
-          CONFIG_PACKAGE_luci-theme-argon=y          
-          CONFIG_PACKAGE_luci-app-adbyby-plus=y          
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
-          CONFIG_PACKAGE_luci-app-v2ray-server=y          
+           CONFIG_PACKAGE_luci-app-adbyby-plus=y      
+          CONFIG_PACKAGE_luci-app-ttyd=y
+          CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+          CONFIG_PACKAGE_luci-app-wol=n
+          CONFIG_PACKAGE_luci-app-upnp=n
+          CONFIG_PACKAGE_luci-app-accesscontrol=n
+          CONFIG_PACKAGE_luci-app-ddns=n
+          CONFIG_PACKAGE_luci-app-filetransfer=n
+          CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
+          CONFIG_PACKAGE_luci-app-vsftpd=n
+          CONFIG_PACKAGE_luci-app-vlmcsd=n
+          CONFIG_PACKAGE_luci-app-zerotier=n          
+          CONFIG_PACKAGE_luci-theme-argon=y          
           EOF
           
           # 关闭ipv6:
